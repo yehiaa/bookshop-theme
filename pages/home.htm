@@ -1,0 +1,25 @@
+title = "home"
+url = "/"
+layout = "baselayout"
+is_hidden = 0
+
+[booksBLock]
+max = 5
+orderBy = "created_at"
+orderDirection = "desc"
+
+[slideShow]
+slider = 1
+
+[seriesBLock]
+max = 4
+orderBy = "created_at"
+orderDirection = "asc"
+==
+{% component 'slideShow' %}
+{% component 'seriesBLock' %}
+{% partial "banner1" %}
+
+{% component 'booksBLock' %}
+{% partial "banner2" %}
+{% partial "subscribe" %}
