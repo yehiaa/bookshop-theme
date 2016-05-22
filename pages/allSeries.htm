@@ -1,0 +1,19 @@
+title = "all series"
+url = "/allseries"
+layout = "baselayout"
+is_hidden = 0
+
+[productsList]
+max = 10
+orderBy = "title"
+orderDirection = 0
+categoryFilter = 0
+levelFilter = 0
+tagFilter = 0
+==
+<!-- <h2>ALL products page</h2> -->
+
+  <!-- !Important notice -->
+  <!-- Only for product page body tag have to added .productPage class -->
+  <!-- <body class="productPage">   -->
+ {% component 'productsList' %}
