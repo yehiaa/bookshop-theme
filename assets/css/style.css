@@ -208,7 +208,9 @@ img {
     display:block;
     height:300px;
     width:100%;
-    margin: 0 auto 0 auto;
+
+  
+
 }
 
 
@@ -939,7 +941,7 @@ img {
 }
 
     .aa-series-blog-single .aa-series-img {
-           
+         
           width:180px;
          height:180px;  
          margin-left:auto;
@@ -949,11 +951,11 @@ img {
     }
 
         .aa-series-blog-single .aa-series-img:hover img {
-            -moz-transform: scale(1.5);
+           /* -moz-transform: scale(1.5);
             -o-transform: scale(1.5);
             -ms-transform: scale(1.5);
             -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+            transform: scale(1.5);*/
         }
 
         .aa-series-blog-single .aa-series-img img {
@@ -1325,9 +1327,16 @@ img {
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-  transition: all 0.5s;
+  transition: all 0.5s; 
+  
 
 }
+.aa-product-catg li figure .aa-product-img  img{
+  margin-left: auto;
+  margin-right:  auto;
+  
+}
+
 .aa-product-catg li figure .aa-add-card-btn {
   background: #000 none repeat scroll 0 0;
   bottom: 0;
