@@ -55,9 +55,9 @@ function onStart()
                 <!-- Modal view slider -->
                 <div class="col-md-5 col-sm-5 col-xs-12">                              
                   <div class="aa-product-view-slider">                                
-                   
-
-                        <div class="aa-product-img-container">
+                    <div id="demo-1" class="simpleLens-gallery-container">
+                      <div class="simpleLens-container">
+                        <div class="simpleLens-big-image-container">
                         <a data-lens-image="{{'assets/img/view-slider/large/polo-shirt-1.png'|theme}}" class="simpleLens-lens-image">
                         {% if book.image.getPath %}
                         <img src="{{ book.image.getPath }}" alt="img {{book.image.title}}">
@@ -67,7 +67,8 @@ function onStart()
                         </a>
                         </div>
                       </div>
-                  
+                    </div>
+                  </div>
                 </div>
                 <!-- Modal view content -->
                 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -117,18 +118,19 @@ function onStart()
                 <!--start single product item -->
                 <li>
                     <figure>
-                      <a class="aa-product-img" href="{{ url('/book') ~ '/' ~ item.slug }}">
+                      <a class="aa-product-img" href="#">
                          {% if item.image.getPath %}
                         <img src="{{ item.image.getPath }}" alt="img {{item.image.title}}">
                         {% else %}
                         <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" >
                         {% endif %}
-                     
+                      <img src="{{item.img.getpath}}" >
                       </a>
-                                        
+                      <a class="aa-add-card-btn"href="#">
+                        <span class="fa fa-shopping-cart"></span>Add To Cart</a>
                            <figcaption>
                             <h4 class="aa-product-title">
-                                  <a href="{{ url('/book') ~ '/' ~ item.slug }}">{{item.title}}</a>
+                                  <a href="#">{{item.title}}</a>
                             </h4>
                           </figcaption>
                     </figure>

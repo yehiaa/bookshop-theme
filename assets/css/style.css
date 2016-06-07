@@ -2308,15 +2308,12 @@ img {
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-slider {
   background-color: #f8f8f8;
   padding: 10px;
   text-align: center;
-}
-#aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-slider .aa-product-img-container{
-  margin:0 auto;
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-content {
   padding-bottom: 10px;
@@ -3397,7 +3394,7 @@ img {
 ====================*/
 
 #aa-contact {
-  background: #ccc none repeat scroll 0 0;
+  
   display: inline;
   float: left;
   width: 100%;
@@ -3405,7 +3402,8 @@ img {
 #aa-contact .aa-contact-area {
   display: inline;
   float: left;
-  padding: 50px 0;
+  padding: 50px 0px;
+   box-shadow: 0px 0px 20px rgba(2,2,2, .5);
   width: 100%;
 }
 #aa-contact .aa-contact-area .aa-contact-top {
@@ -3435,7 +3433,7 @@ img {
   background-color: #FFF;
   display: inline;
   float: left;
-  padding: 50px;
+  padding: 10px 50px 50px 50px;
   width: 100%;
 }
 #aa-contact .aa-contact-area .aa-contact-address .aa-contact-address-left {
@@ -3496,7 +3494,7 @@ img {
    ABOUT PAGE
 ===================*/
 #aa-about {
-  background: #ccc none repeat scroll 0 0;
+  
   display: inline;
   float: left;
   width: 100%;
@@ -3506,6 +3504,12 @@ img {
   float: left;
   padding: 50px 0;
   width: 100%;
+  box-shadow: 0px 0px 20px rgba(2,2,2, .5);
+}
+#aa-about .aa-about-area h2 { 
+font-size:50px;
+color:#555;
+padding-bottom: 50px;
 }
 #aa-about .aa-about-area .aa-about-top {
   background-color: #FFF;
@@ -3524,7 +3528,7 @@ img {
   background-color: #FFF;
   display: inline;
   float: left;
-  padding: 50px 100px;
+  padding: 50px 35px;
    
   width: 100%;
 }
