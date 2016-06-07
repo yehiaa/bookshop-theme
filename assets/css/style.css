@@ -2308,12 +2308,16 @@ img {
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-slider {
   background-color: #f8f8f8;
   padding: 10px;
   text-align: center;
+}
+#aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-slider .aa-big-image-container
+{
+  margin: 0 auto
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-content {
   padding-bottom: 10px;

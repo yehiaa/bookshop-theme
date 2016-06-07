@@ -55,9 +55,8 @@ function onStart()
                 <!-- Modal view slider -->
                 <div class="col-md-5 col-sm-5 col-xs-12">                              
                   <div class="aa-product-view-slider">                                
-                    <div id="demo-1" class="simpleLens-gallery-container">
-                      <div class="simpleLens-container">
-                        <div class="simpleLens-big-image-container">
+                    
+                        <div class="aa-big-image-container">
                         <a data-lens-image="{{'assets/img/view-slider/large/polo-shirt-1.png'|theme}}" class="simpleLens-lens-image">
                         {% if book.image.getPath %}
                         <img src="{{ book.image.getPath }}" alt="img {{book.image.title}}">
@@ -67,8 +66,7 @@ function onStart()
                         </a>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                   
                 </div>
                 <!-- Modal view content -->
                 <div class="col-md-7 col-sm-7 col-xs-12">
