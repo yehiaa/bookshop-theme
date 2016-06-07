@@ -1,3 +1,4 @@
+
 /*
   Template Name: Daily Shop
   Author : MarkUps
@@ -38,7 +39,7 @@
 /* BASE - Base tyles, Variables, Mixins, etc. */
 body {
   background-color:#ffffff;
-  font-family: "Lato", sans-serif;
+  font-family: "Lateef", "Lato", sans-serif, , cursive,;
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
@@ -926,9 +927,9 @@ img {
         width: 100%;
     }
 
-        #aa-series-blog .aa-series-blog-area > h2 {
-            font-weight:500;
-            color:#000000;
+        #aa-series-blog .aa-series-blog-area  h2 {
+            font-weight:normal;
+            color:#333;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -1566,6 +1567,11 @@ img {
   /* bootstrap hack:fix content width inside hidden tabs */
   /* bootstrap hack end */
 }
+#aa-popular-category .aa-popular-category-area h2{
+  color:#333;
+  font-weight: normal;
+
+  }
 #aa-popular-category .aa-popular-category-area .tab-content > .tab-pane:not(.active),
 #aa-popular-category .aa-popular-category-area .pill-content > .pill-pane:not(.active) {
   display: block;
