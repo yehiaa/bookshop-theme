@@ -86,6 +86,8 @@ img {
   border: none;
 }
 
+
+
 .aa-primary-btn {
   font-size: 16px;
   padding: 10px 30px;
@@ -130,6 +132,7 @@ img {
   display: inline-block;
   font-size: 16px;
   padding: 12px 18px;
+
   color: #fff;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -932,6 +935,16 @@ img {
             color:#333;
             margin-bottom: 20px;
             text-align: center;
+        }
+        #aa-series-blog .aa-series-blog-area .aa-browse-btn-container{
+          
+          text-align: center;  
+          padding-top: 15px;
+          margin-right: auto ;
+          margin-left: auto;
+
+
+
         }
 
 .aa-series-blog-single {
