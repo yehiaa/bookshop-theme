@@ -931,10 +931,13 @@ img {
     }
 
         #aa-series-blog .aa-series-blog-area  h2 {
+           
             font-weight:normal;
+           
             color:#333;
             margin-bottom: 20px;
             text-align: center;
+            
         }
         #aa-series-blog .aa-series-blog-area .aa-browse-btn-container{
           
@@ -942,8 +945,6 @@ img {
           padding-top: 15px;
           margin-right: auto ;
           margin-left: auto;
-
-
 
         }
 
@@ -1570,7 +1571,7 @@ img {
 #aa-popular-category {
   display: inline;
   float: left;
-  padding: 25px 0;
+  padding: 35px 0;
   width: 100%;
 }
 #aa-popular-category .aa-popular-category-area {
@@ -2336,7 +2337,8 @@ img {
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-slider .aa-big-image-container
 {
-  margin: 0 auto
+  margin: 0 auto;
+  
 }
 #aa-product-details .aa-product-details-area .aa-product-details-content .aa-product-view-content {
   padding-bottom: 10px;
