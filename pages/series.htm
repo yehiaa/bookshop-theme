@@ -1,26 +1,36 @@
-title = "book"
-url = "/book/:bookSlug"
+title = "series"
+url = "/series/:seriesSlug"
 layout = "baselayout"
 is_hidden = 0
 ==
 function onStart()
 {
-    $book = \Acme\BookShop\Models\Book::where('slug', $this->param('bookSlug') )->first();
+    $series = \Acme\BookShop\Models\Series::where('slug', $this->param('seriesSlug') )->with("books")->first();
+
+    $series_books = $series->books;
+
     
-    $rel_books = \Acme\BookShop\Models\Book::where('series_id' , '=', $book->series_id )->get(); 
+    $levels_id = $series->books()->groupBy("level_id")->get(["level_id"])->toArray();
+    $rel_series = \Acme\BookShop\Models\Series::whereHas('books', function ($query) use( $levels_id) {
+          $query->whereIn('level_id', $levels_id);
+    })->get();
    
-    if($book)
+    if($series)
     {
-      $this['book'] = $book;
-      $this->page->title = $book->title;
-      if($rel_books)
+      $this['series'] = $series;
+      $this->page->title = $series->title;
+
+      if($series_books)
       {
-         $this['rel_books']= $rel_books;
-           
-      }else
-      {
-         return \Redirect::to('/404');
+         $this['series_books']= $series_books;
       }
+      
+      if($rel_series)
+      {
+
+         $this['rel_series'] = $rel_series;
+      }
+
     }else{
       return \Redirect::to('/404');
     }
@@ -33,10 +43,10 @@ function onStart()
  <img src="{{'assets/img/fashion/fashion-header-bg-8.jpg'|theme}}" alt=" img"> 
    <div class="container">
     <div class="aa-catg-head-banner-content">
-      <h2>Book details | {{book.title}}</h2>
+      <h2>series details | {{series.title}}</h2>
       <ol class="breadcrumb">
         <li><a href="{{ url('/') }}">Home</a></li>                   
-        <li class="active">Book Details | {{book.title}}</li>
+        <li class="active">series Details | {{series.title}}</li>
       </ol>
     </div>
    </div>
@@ -58,10 +68,10 @@ function onStart()
                     
                         <div class="aa-big-image-container">
                         <a data-lens-image="{{'assets/img/view-slider/large/polo-shirt-1.png'|theme}}" class="simpleLens-lens-image">
-                        {% if book.image.getPath %}
-                        <img src="{{ book.image.getPath }}" alt="img {{book.image.title}}">
+                        {% if series.image.getPath %}
+                        <img src="{{ series.image.getPath }}" alt="img {{series.image.title}}">
                         {% else %}
-                        <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" alt="img {{ book.image.title }}">
+                        <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" alt="img {{ series.image.title }}">
                         {% endif %}
                         </a>
                         </div>
@@ -71,15 +81,30 @@ function onStart()
                 <!-- Modal view content -->
                 <div class="col-md-7 col-sm-7 col-xs-12">
                   <div class="aa-product-view-content">
-                    <h3>{{ book.title }}</h3>
+                    <h3>{{ series.title }}</h3>
                    
-                    <p>{{ book.shortDescription }}!</p>
-                    <h4><strong>Author : </strong>{{ book.author.name }}</h4>
-                    <h4><strong>publisher : </strong>{{ book.publisher.name }}</h4>
-                    <h4><strong>Category : </strong>{{ book.category.name }}</h4>
-                    <h4><strong>Level : </strong>{{ book.level.name }}</h4>
-                    <h4><strong>publish Date : </strong>{{ book.publishDate|date("d/m/Y") }}</h4>
-                    
+                    <p>{{ series.shortDescription }}!</p>
+
+                    <h4><strong>Author : </strong>
+                    {% for author in series.authors %}
+                    {{ author.name }}
+                    {% endfor %}
+                    </h4>
+                    <h4><strong>publisher : </strong>
+                    {% for publisher in series.publishers %}
+                    {{ publisher.name }}
+                    {% endfor %}
+                    </h4>
+                    <h4><strong>Category : </strong>
+                    {% for category in series.categories %}
+                    {{ category.name }}
+                    {% endfor %}
+                    </h4>
+                    <h4><strong>Level : </strong>
+                    {% for level in series.levels %}
+                    {{ level.name }}
+                    {% endfor %}
+                    </h4>              
             
                     <!-- <div class="aa-prod-view-bottom">
                       <a class="aa-add-to-cart-btn" href="#">Add To Cart</a>
@@ -98,44 +123,63 @@ function onStart()
               <!-- Tab panes -->
               <div class="tab-content">
                 <div class="tab-pane fade in active" id="description">
-                  <p>{{ book.description }}</p>
+                  <p>{{ series.description }}</p>
                 </div>
               </div>
-              
-              
+
             <!-- Related product -->
             <div class="aa-product-related-item">
-              <h3>Related Books</h3>
-              
-              
+              <h3>Series Books</h3>
               <ul class="aa-product-catg aa-related-item-slider">
                 <!-- start single product item -->
-             
-                 
-              {% for item in rel_books %}
+              {% for book in series_books %}
                 <!--start single product item -->
                 <li>
                     <figure>
-                      <a class="aa-product-img" href="{{ url('/book') ~ '/' ~ item.slug }}">
+                      <a class="aa-product-img" href="{{ url('/book') ~ '/' ~ book.slug }}">
+                         {% if book.image.getPath %}
+                        <img src="{{ book.image.getPath }}" alt="img {{book.image.title}}">
+                        {% else %}
+                        <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" >
+                        {% endif %}
+                      </a>
+                      <h4 class="aa-product-title">
+                            <a href="{{ url('/book') ~ '/' ~ book.slug }}">{{book.title}}</a>
+                      </h4>
+                    </figure>
+                </li>
+              {% endfor %}
+              </ul>
+
+            </div>              
+              
+            <!-- Related product -->
+            <div class="aa-product-related-item">
+              <h3>Related series</h3>
+              
+              <ul class="aa-product-catg aa-related-item-slider">
+                <!-- start single product item -->
+              {% for item in rel_series %}
+                <!--start single product item -->
+                <li>
+                    <figure>
+                      <a class="aa-product-img" href="{{ url('/series') ~ '/' ~ item.slug }}">
                          {% if item.image.getPath %}
                         <img src="{{ item.image.getPath }}" alt="img {{item.image.title}}">
                         {% else %}
                         <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" >
                         {% endif %}
-                   
                       </a>
-                      
-                            <h4 class="aa-product-title">
-                                  <a href="{{ url('/book') ~ '/' ~ item.slug }}">{{item.title}}</a>
-                            </h4>
-                          </figcaption>
+                      <h4 class="aa-product-title">
+                            <a href="{{ url('/series') ~ '/' ~ item.slug }}">{{item.title}}</a>
+                      </h4>
                     </figure>
                 </li>
               {% endfor %}
-                                    
               </ul>
-
             </div>  
+
+
           </div>
         </div>
       </div>
