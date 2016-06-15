@@ -24,22 +24,22 @@
 
             <li>
               <figure>
-                <a class="aa-product-img" href="{{ url('/series') ~ '/' ~ series.slug }}">
+                <a class="ss-product-body-img" href="{{ url('/series') ~ '/' ~ series.slug }}">
 	                {% if series.image.getPath %}
-	                <img src="{{ series.image.getPath }}" alt="img {{series.image.title}}">
+	                <img src="{{ series.image.getPath}}" alt="img {{series.image.title}}">
 	                {% else %}
-	                <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" alt="img {{ series.image.title }}">
+	                <img src="{{'assets/img/electronics/electronic-1.png'|theme }}" alt="img {{ series.image.title }}">
 	                {% endif %}
                 </a>
                <!--  <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a> -->
                 <figcaption>
                   <h4 class="aa-product-title"><a href="{{ url('/series') ~ '/' ~ series.slug }}">{{ series.title }}</a></h4>
                   <!-- <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span> -->
-                  <p class="aa-product-descrip">{{ series.shortDescription }}</p>
+                  <p class="aa-product-description">{{ series.shortDescription }}</p>
                 </figcaption>
               </figure>                          
               <div class="aa-product-hvr-content">
-               <a><h5>{{series.level.name}}</h5></a>
+               <!-- <a><h5>{{series.level.name}}</h5></a> -->
 
                 <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a> -->
                 <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"> <span class="fa fa-exchange"></span></a> -->

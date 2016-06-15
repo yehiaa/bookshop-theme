@@ -209,6 +209,7 @@ img {
 
 .aa-product-img
 {
+   border-radius:50px: 
     display:block;
     height:300px;
     width:100%;
@@ -2245,6 +2246,13 @@ img {
 }
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .aa-product-catg {
   margin-left: -30px;
+}
+
+#aa-product-category .aa-product-catg-content .aa-product-catg-body .aa-product-catg .ss-product-body-img {
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+border-radius:100px;
+
 }
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .aa-product-catg li {
   margin: 0 0 20px 30px;
