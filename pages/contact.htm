@@ -2,6 +2,15 @@ title = "contact"
 url = "/contact"
 layout = "baselayout"
 is_hidden = 0
+
+[simpleContact]
+nameTitle = "Full Name"
+emailTitle = "Email"
+phoneTitle = "Phone"
+subjectTitle = "Subject"
+messageTitle = "Message"
+buttonText = "Submit"
+displayPhone = 1
 ==
 <!-- catg header banner section -->
   
@@ -25,37 +34,11 @@ is_hidden = 0
              <div class="row">
                <div class="col-md-8">
                  <div class="aa-contact-address-left">
-                   <form class="comments-form contact-form" action="">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">                        
-                          <input type="text" placeholder="Your Name" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">                        
-                          <input type="email" placeholder="Email" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">                        
-                          <input type="text" placeholder="Subject" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">                        
-                          <input type="text" placeholder="Company" class="form-control">
-                        </div>
-                      </div>
-                    </div>                  
-                     
-                    <div class="form-group">                        
-                      <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                    </div>
-                    <button class="aa-secondary-btn">Send</button>
-                  </form>
+
+<!-- start form -->
+{% component 'simpleContact' %}
+<!-- end form -->
+
                  </div>
                </div>
                <div class="col-md-4">
