@@ -69,7 +69,7 @@
           <h3>Level</h3>
           <ul class="aa-catg-nav">
             {% for level in seriesList.levels %}
-            <li><a href="?level={{ level }}">{{ level }}</a></li>
+            <li ><a href="?level={{ level }}">{{ level }}</a></li>
             {% endfor %}
           </ul>
         </div>
@@ -77,88 +77,15 @@
 
         <div class="aa-sidebar-widget">
           <h3>Category</h3>
-          <div class="tag-cloud">
+          <ul class="aa-catg-nav">
             {% for category in seriesList.categories %}
-            <a href="?category={{ category }}">{{ category }}</a>
+            <li><a href="?category={{ category }}">{{ category }}</a></li>
             {% endfor %}
-          </div>
+          </ul>
         </div>
 
        
 
-        <!-- single sidebar -->
-<!--         <div class="aa-sidebar-widget">
-          <h3>Tags</h3>
-          <div class="tag-cloud">
-            <a href="#">Fashion</a>
-            <a href="#">Ecommerce</a>
-            <a href="#">Shop</a>
-            <a href="#">Hand Bag</a>
-            <a href="#">Laptop</a>
-            <a href="#">Head Phone</a>
-            <a href="#">Pen Drive</a>
-          </div>
-        </div> -->
-        <!-- single sidebar -->
-        
-        <!-- single sidebar -->
-        <!-- <div class="aa-sidebar-widget">
-          <h3>Recently Views</h3>
-          <div class="aa-recently-views">
-            <ul>
-              <li>
-                <a href="#" class="aa-cartbox-img"><img alt="img" src="img/woman-small-2.jpg"></a>
-                <div class="aa-cartbox-info">
-                  <h4><a href="#">Product Name</a></h4>
-                  <p>1 x $250</p>
-                </div>                    
-              </li>
-              <li>
-                <a href="#" class="aa-cartbox-img"><img alt="img" src="img/woman-small-1.jpg"></a>
-                <div class="aa-cartbox-info">
-                  <h4><a href="#">Product Name</a></h4>
-                  <p>1 x $250</p>
-                </div>                    
-              </li>
-               <li>
-                <a href="#" class="aa-cartbox-img"><img alt="img" src="img/woman-small-2.jpg"></a>
-                <div class="aa-cartbox-info">
-                  <h4><a href="#">Product Name</a></h4>
-                  <p>1 x $250</p>
-                </div>                    
-              </li>                                      
-            </ul>
-          </div>                            
-        </div> -->
-        <!-- single sidebar -->
-        <!-- <div class="aa-sidebar-widget">
-          <h3>Top Rated Products</h3>
-          <div class="aa-recently-views">
-            <ul>
-              <li>
-                <a href="#" class="aa-cartbox-img"><img alt="img" src="img/woman-small-2.jpg"></a>
-                <div class="aa-cartbox-info">
-                  <h4><a href="#">Product Name</a></h4>
-                  <p>1 x $250</p>
-                </div>                    
-              </li>
-              <li>
-                <a href="#" class="aa-cartbox-img"><img alt="img" src="img/woman-small-1.jpg"></a>
-                <div class="aa-cartbox-info">
-                  <h4><a href="#">Product Name</a></h4>
-                  <p>1 x $250</p>
-                </div>                    
-              </li>
-               <li>
-                <a href="#" class="aa-cartbox-img"><img alt="img" src="img/woman-small-2.jpg"></a>
-                <div class="aa-cartbox-info">
-                  <h4><a href="#">Product Name</a></h4>
-                  <p>1 x $250</p>
-                </div>                    
-              </li>                                      
-            </ul>
-          </div>                            
-        </div> -->
       </aside>
     </div>
    

@@ -20,13 +20,40 @@ orderDirection = "asc"
 max = 3
 
 [form]
+
+[advanced]
+idSlider = 1
+height = 400
+autoplay = "true"
+fillmode = 4
+transaction = 1
+autoplayinterval = 2000
+pauseonhover = 1
+arrowkeynavigation = "true"
+slideduration = 500
+mindragoffset = 40
+slidespacing = 0
+dragorientation = 1
+playorientation = 1
+chancetoshow = 2
+autocenter = 1
+orientation = 1
+spacingx = 8
+spacingy = 8
+steps = 1
+lanes = 1
+chancetoshowarrow = 1
+autocenterarrow = 2
+stepsarrow = 1
 ==
-{% component 'slideShow' %}
+<div style="width:90%; margin:0px auto; ">
+
+{% component "advanced" %}
+</div>
 {% partial 'seriesBLock' %}
 {% partial "banner1" %}
 <hr>
 {% component 'booksBLock' %}
-{% partial "banner2" %}
 
 {% partial "news" %}
 {% partial "banner2" %}

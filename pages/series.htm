@@ -25,11 +25,11 @@ function onStart()
          $this['series_books']= $series_books;
       }
       
-      if($rel_series)
+      /*if($rel_series)
       {
 
          $this['rel_series'] = $rel_series;
-      }
+      }*/
 
     }else{
       return \Redirect::to('/404');
@@ -125,6 +125,32 @@ function onStart()
                 <div class="tab-pane fade in active" id="description">
                   <p>{{ series.description }}</p>
                 </div>
+
+
+               <!-- <div class="table-responsive" style="width:90%">
+                    <table class="table table-striped">
+                      <thead>
+                          <tr>
+                            <th>{{series.title}}</th>
+
+                           {% for book in series.books %}
+                            <th>{{book.title}}</th>
+                           {% endfor %}
+
+                          </tr>
+                      </thead>
+                        <tbody>
+                          <tr >
+                            <td>Student Book</td>
+                           {% for book in series.books %}
+                            <td>{{book.ISBN}}</td>
+                           {% endfor %}
+                          </tr>
+                          
+                        </tbody>
+                    </table>
+             </div> -->
+
               </div>
 
             <!-- Related product -->
@@ -153,31 +179,8 @@ function onStart()
 
             </div>              
               
-            <!-- Related product -->
-            <div class="aa-product-related-item">
-              <h3>Related series</h3>
-              
-              <ul class="aa-product-catg aa-related-item-slider">
-                <!-- start single product item -->
-              {% for item in rel_series %}
-                <!--start single product item -->
-                <li>
-                    <figure>
-                      <a class="aa-product-img" href="{{ url('/series') ~ '/' ~ item.slug }}">
-                         {% if item.image.getPath %}
-                        <img src="{{ item.image.getPath }}" alt="img {{item.image.title}}">
-                        {% else %}
-                        <img src="{{ 'assets/img/electronics/electronic-1.png'|theme }}" >
-                        {% endif %}
-                      </a>
-                      <h4 class="aa-product-title">
-                            <a href="{{ url('/series') ~ '/' ~ item.slug }}">{{item.title}}</a>
-                      </h4>
-                    </figure>
-                </li>
-              {% endfor %}
-              </ul>
-            </div>  
+            <!-- Related Series -->
+           
 
 
           </div>

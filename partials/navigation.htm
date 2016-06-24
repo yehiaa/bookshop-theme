@@ -16,19 +16,17 @@
             <!-- Left nav -->
             <ul class="nav navbar-nav">
               <li><a href="{{ url('/') }}">Home</a></li>
-              <li><a href="{{ url('/products') }}">Books </a></li>
-              <!-- <li><a href="#">Categories <span class="caret"></span></a>
+              <li><a href="{{ url('/products') }}">Books </a> 
                 <ul class="dropdown-menu">
-                  
+                   <li><a href="{{ url('allseries') }}">All Series</a></li>
+                   <li><a href="{{ url('products') }}">All Books</a>
+                     
+                   </li>
                 </ul>
-              </li> -->
-              <!-- <li><a href="#">Levels <span class="caret"></span></a>
-                <ul class="dropdown-menu"> 
-                
-                </ul>
-              </li> -->
+
+              </li>          
               
-              <li><a href="#">News</a></li>
+              <li><a href="{{ url('news') }}">News</a></li>
               <li><a href="{{ url('contact') }}">Contact</a></li>
               <li><a href="{{ url('about') }}">About</a></li>
             </ul>

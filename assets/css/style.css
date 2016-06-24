@@ -2,7 +2,7 @@
 /*
   Template Name: Daily Shop
   Author : MarkUps
-  Author URI: http://www.markups.io/
+  Author URI: http://wwwPmarkups.io/
   Version: 1.0
   Tags: light, white, ecommerce, online store, multi page, custom-colors, Bootstrap,responsive, html5, css3, Sass, template, web template
 
@@ -37,19 +37,21 @@
 */
 
 /* BASE - Base tyles, Variables, Mixins, etc. */
+html{
+  margin: 0px;
+   padding:0px; }
+
 body {
-  background-color:#ffffff;
+  background-color:#e6e1ca;
   font-family: "Helvetica Neue", Helvetica, Lato , sans-serif, , cursive,;
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
   margin-top:0px;
   padding: 0px;
+  height: 100%;
 }
 
-html{
-  margin: 0px;
-   padding:0px; }
 
 
 .no-padding {
@@ -219,6 +221,7 @@ div{border:0px; }
     display:block;
     height:300px;
     width:100%;
+    
 
   
 
@@ -306,7 +309,7 @@ div{border:0px; }
   margin-top: -2px;
   width: 12px;
 }
-#aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:after, #aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:before {
+/*#aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:after, #aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:before {
   bottom: 100%;
   left: 50%;
   border: solid transparent;
@@ -316,7 +319,7 @@ div{border:0px; }
   position: absolute;
   pointer-events: none;
 }
-#aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:after {
+*/#aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:after {
   border-color: rgba(255, 255, 255, 0);
   border-bottom-color: #fff;
   border-width: 6px;
@@ -409,7 +412,8 @@ div{border:0px; }
   display: inline;
   width: 100%;
   padding: 20px 0;
-  background-color:#fff;
+  background-color:#e6e1ca;
+ 
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area {
   float: left;
@@ -660,7 +664,7 @@ div{border:0px; }
   display: inline;
   float: left;
   width: 100%;
-  background-color:#222;
+  background-color:#333;
 }
 #menu .menu-area {
   float: left;
@@ -692,6 +696,10 @@ div{border:0px; }
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+/*#menu .menu-area .navbar-default .navbar-nav li a:hover
+{
+  background-color: #ff6666;
+}*/
 #menu .menu-area .navbar-default .navbar-nav .open a {
   background-color: #fff;
 }
@@ -848,14 +856,16 @@ div{border:0px; }
 ====================*/
 
 #aa-slider {
-  float: left;
+  
   display: inline;
-  width: 100%;
+  width: 50%;
+  height: 50%;
+  margin: 0px auto;
 }
 #aa-slider .aa-slider-area {
   display: inline;
-  float: left;
   width: 100%;
+  
 }
 #aa-slider .aa-slider-area .seq-title {
   left: 19%;
@@ -928,7 +938,7 @@ div{border:0px; }
 #aa-series-blog {
     display: inline;
     float: left;
-    padding: 50px 0;
+    padding: 40px 0;
     width: 100%;
 }
 
@@ -957,7 +967,11 @@ div{border:0px; }
         }
 
 .aa-series-blog-single {
-     padding-top:20px;
+     padding:20px 20px;
+     background-color: #fff;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     height: 400px;
     display:block;
     width: 100%;
    
@@ -1315,7 +1329,7 @@ div{border:0px; }
   
   display: block;
   float: left;
-  height: 380px;  
+  height: 300px;  
   text-align: center;
   margin: 0 0 20px 55px;
   width: 20.5%;
@@ -1589,6 +1603,9 @@ div{border:0px; }
   /* bootstrap hack:fix content width inside hidden tabs */
   /* bootstrap hack end */
 }
+#aa-popular-category .aa-popular-category-area .tab-content {
+  padding-top:30px;
+  }
 #aa-popular-category .aa-popular-category-area h2{
   color:#333;
   font-weight: normal;
@@ -1760,7 +1777,7 @@ div{border:0px; }
 #aa-latest-blog {
   display: inline;
   float: left;
-  padding: 50px 0;
+  padding: 30px 0;
   width: 100%;
 }
 #aa-latest-blog .aa-latest-blog-area {
@@ -2052,6 +2069,15 @@ div{border:0px; }
   width: 100%;
 }
 #aa-product-category .aa-sidebar {
+  background-color: #fff;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+
+  font-size:17px;
+  margin-top: 30px;
   display: inline;
   float: left;
   width: 100%;
@@ -2060,6 +2086,7 @@ div{border:0px; }
   display: inline;
   float: left;
   width: 100%;
+  padding: 0 20px 0px 20px;
   /* category */
   /* tags */
   /* price range  */
@@ -2067,6 +2094,7 @@ div{border:0px; }
 }
 #aa-product-category .aa-sidebar .aa-sidebar-widget h3 {
   padding-bottom: 10px;
+
 }
 #aa-product-category .aa-sidebar .aa-sidebar-widget .aa-catg-nav li a {
   display: block;
@@ -2076,6 +2104,24 @@ div{border:0px; }
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+#aa-product-category .aa-sidebar .aa-sidebar-widget .aa-catg-nav li a:hover {
+  
+  padding-left: 15px;
+  color: #fff;
+  background-color: #ff6666;
+ 
+}
+#aa-product-category .aa-sidebar .aa-sidebar-widget .aa-catg-nav li a:active{
+ padding-left: 15px;
+  color: #fff;
+  background-color: #ff6666;
+}
+
+#aa-product-category .aa-sidebar .aa-sidebar-widget .aa-catg-nav .active {
+ padding-left: 15px;
+  color: #fff;
+  background-color: #ff6699;
 }
 #aa-product-category .aa-sidebar .aa-sidebar-widget .tag-cloud {
   display: block;
@@ -3472,7 +3518,7 @@ border-radius:100px;
 #aa-contact .aa-contact-area {
   display: inline;
   float: left;
-  padding: 50px 0px;
+  padding: 0px 0px;
    box-shadow: 0px 0px 20px rgba(2,2,2, .5);
   width: 100%;
 }
@@ -3572,9 +3618,10 @@ border-radius:100px;
 #aa-about .aa-about-area {
   display: inline;
   float: left;
-  padding: 50px 0;
+  padding: 0px 0;
   width: 100%;
-  box-shadow: 0px 0px 20px rgba(2,2,2, .5);
+
+  box-shadow: 0px 0px 20px #333;
 }
 #aa-about .aa-about-area h2 { 
 font-size:50px;
@@ -3598,7 +3645,7 @@ padding-bottom: 50px;
   background-color: #FFF;
   display: inline;
   float: left;
-  padding: 50px 35px;
+  padding: 100px 35px;
    
   width: 100%;
 }

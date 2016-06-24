@@ -92,12 +92,12 @@
 
 
         <div class="aa-sidebar-widget">
-          <h3>Category</h3>
-          <div class="tag-cloud">
+          <h3>Series</h3>
+          <ul class="aa-catg-nav">
             {% for category in productsList.categories %}
-            <a href="?category={{ category }}">{{ category }}</a>
+            <li><a href="?category={{ category }}">{{ category }}</a></li>
             {% endfor %}
-          </div>
+          </ul>
         </div>
 
        
