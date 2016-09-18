@@ -1,4 +1,3 @@
-
 /*
   Template Name: Daily Shop
   Author : MarkUps
@@ -42,8 +41,8 @@ html{
    padding:0px; }
 
 body {
-  background-color:#e6e1ca;
-  font-family: "Helvetica Neue", Helvetica, Lato , sans-serif, , cursive,;
+  background-color:#ffffff;
+  font-family: "Helvetica Neue", Helvetica, Lato , sans-serif, cursive;
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
@@ -412,7 +411,7 @@ div{border:0px; }
   display: inline;
   width: 100%;
   padding: 20px 0;
-  background-color:#e6e1ca;
+  background-color:#ffffff;
  
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area {
@@ -968,7 +967,7 @@ div{border:0px; }
 
 .aa-series-blog-single {
      padding:20px 20px;
-     background-color: #fff;
+     background-color: #f7f4f4;
      border-radius: 5px;
      margin-bottom: 20px;
      height: 400px;
@@ -1325,19 +1324,47 @@ div{border:0px; }
 .aa-product-catg {
   margin-left: -54px;
 }
-.aa-product-catg li {
-  
+
+/* Series Contatiner */
+.aa-series-container li
+{
+  height: 400px;    
+  padding:20px 20px;
+  background-color:#f3f3f3;
   display: block;
   float: left;
-  height: 300px;  
   text-align: center;
-  margin: 0 0 20px 55px;
-  width: 20.5%;
+  margin: 0 0 20px 0px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
+.aa-product-catg li {
+
+  height: 380px;    
+  padding:20px 20px;
+  background-color:#f3f3f3;
+  display: block;
+  float: left;
+  text-align: center;
+  margin: 0 0 20px 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.aa-product-catg li h4 
+{
+    font-weight:700;
+    
+}
+
+
+
+
+
+
 .aa-product-catg li:hover figure .aa-product-img {
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 .aa-product-catg li:hover figure .aa-add-card-btn {
   -moz-transform: scale(1);
@@ -1358,7 +1385,7 @@ div{border:0px; }
   height: 300px;
 }
 .aa-product-catg li figure .aa-product-img {
-  background-color: #f9f9fb;
+  background-color: inherit;
   display: block;  
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -2069,7 +2096,7 @@ div{border:0px; }
   width: 100%;
 }
 #aa-product-category .aa-sidebar {
-  background-color: #fff;
+  background-color: #f3f3f3;
 
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

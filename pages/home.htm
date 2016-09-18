@@ -2,14 +2,13 @@ title = "home"
 url = "/"
 layout = "baselayout"
 is_hidden = 0
+meta_title = "description"
+meta_description = "alexpublishing or alex publishing"
 
 [booksBLock]
 max = 5
 orderBy = "created_at"
 orderDirection = "desc"
-
-[slideShow]
-slider = 1
 
 [seriesBLock]
 max = 4
@@ -21,35 +20,11 @@ max = 3
 
 [form]
 
-[advanced]
-idSlider = 1
-height = 400
-autoplay = "true"
-fillmode = 4
-transaction = 1
-autoplayinterval = 2000
-pauseonhover = 1
-arrowkeynavigation = "true"
-slideduration = 500
-mindragoffset = 40
-slidespacing = 0
-dragorientation = 1
-playorientation = 1
-chancetoshow = 2
-autocenter = 1
-orientation = 1
-spacingx = 8
-spacingy = 8
-steps = 1
-lanes = 1
-chancetoshowarrow = 1
-autocenterarrow = 2
-stepsarrow = 1
+[slideShow]
+slider = 1
 ==
-<div style="width:90%; margin:0px auto; ">
+{% component 'slideShow'%}
 
-{% component "advanced" %}
-</div>
 {% partial 'seriesBLock' %}
 {% partial "banner1" %}
 <hr>
