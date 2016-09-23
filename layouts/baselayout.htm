@@ -1,3 +1,22 @@
+[localePicker]
+forceUrl = 1
+==
+<?php
+function onBeforePageStart(){
+  $locales = ['en', 'ar'];
+  $locale = $locales[0];
+  if( in_array(Request::segment(1), $locales) )
+    $locale = Request::segment(1) ;
+    
+  $this['locale'] = $locale ;
+  if($locale == 'ar'){
+    $this->addCss('assets/css/ar-style.css');
+    $this->addCss('assets/css/bootstrap-rtl.min.css');
+  }
+  
+  
+}
+?>
 ==
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +33,7 @@
 
     <title>Alexandria Publishing : {{ this.page.title }}</title>
     
-    {% styles %}
+    
 
     <link href="{{ [
     'assets/css/font-awesome.css',
@@ -27,8 +46,9 @@
     'assets/css/style.css',
     ]|theme }}" rel="stylesheet">
 
-
-    <!-- Google Font -->
+    {% styles %}
+   
+     <!-- Google Font -->
     <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lateef&subset=arabic,latin' rel='stylesheet' type='text/css'>
@@ -55,7 +75,14 @@
   <!-- END SCROLL TOP BUTTON -->
 
   {% partial "header" %}
-
+  
+  <p>
+    {{ 'locale.selection'|_}}
+  
+    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a>,
+    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ar'">Arabic</a>
+    {% component 'localePicker' %}
+</p>
   {% partial "navigation" %}
 
   {% page %}

@@ -3,3 +3,16 @@ description: 'theme for book shop  '
 author: yehia
 homepage: ''
 code: ''
+
+translate:
+    en:
+        locale.selection: 'select language'
+        nav.video: 'Video'
+        title.home: 'Welcome Home'
+        title.video: 'Screencast Video'
+    ar:
+        locale.selection: 'أختر اللغة'
+        nav.home: 'Home'
+        nav.video: 'Video'
+        title.home: 'Welcome Home'
+        title.video: 'Screencast Video'
