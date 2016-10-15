@@ -95,6 +95,11 @@ img {
 
 div{border:0px; }
 
+.container{  
+  margin: 0 auto;
+  padding: 0;
+}
+
 .aa-primary-btn {
   font-size: 16px;
   padding: 10px 30px;
@@ -419,6 +424,7 @@ div{border:0px; }
   display: inline;
   width: 100%;
 }
+
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo {
   float: left;
   margin-top: 4px;
@@ -452,9 +458,9 @@ div{border:0px; }
 }
 
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box {
-  float: right;
-  margin-right: 5%;
-  margin-top: 13px;
+  float: left;
+  margin:13px 5% 0 0;
+  
   position: relative;
   width: 500px;
 }
@@ -483,6 +489,13 @@ div{border:0px; }
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box button:hover {
   opacity: 0.8;
+}
+#aa-header .aa-header-bottom .aa-header-bottom-area .aa-language{
+  width: 100px;
+  float: right;
+  margin-top: 17px;
+  
+
 }
 #aa-header .aa-header-bottom .aa-cartbox {
   float: right;
@@ -936,21 +949,20 @@ div{border:0px; }
 
 #aa-series-blog {
     display: inline;
-    float: left;
-    padding: 40px 0;
+    float: left;    
     width: 100%;
 }
 
     #aa-series-blog .aa-series-blog-area {
         display: inline;
         float: left;
+        margin: 0px auto;
         width: 100%;
     }
 
         #aa-series-blog .aa-series-blog-area  h2 {
            
-            font-weight:normal;
-           
+            font-weight:normal;           
             color:#333;
             margin-bottom: 20px;
             text-align: center;
@@ -965,23 +977,25 @@ div{border:0px; }
 
         }
 
-.aa-series-blog-single {
+ #aa-series-blog .aa-series-blog-area .aa-series-blog-single {
      padding:20px 20px;
+     margin-right: 0px;
      background-color: #f7f4f4;
      border-radius: 5px;
-     margin-bottom: 20px;
+     margin: 0px auto 20px auto;
      height: 400px;
-    display:block;
-    width: 100%;
+     display:inline-block;
+     width: 100%;
    
 }
 
+
     .aa-series-blog-single .aa-series-img {
          
-          width:180px;
-         height:180px;  
-         margin-left:auto;
-         margin-right:auto;                 
+        width:180px;
+        height:180px;  
+        margin-left:auto;
+        margin-right:auto;                 
         position: relative;
         overflow: hidden;
     }
@@ -1598,19 +1612,22 @@ div{border:0px; }
 
 #aa-banner {
   display: inline;
-  float: left;
+  float: left;  
   width: 100%;
 }
 #aa-banner .aa-banner-area {
   display: inline;
+  margin: 0 auto;
   float: left;
   width: 100%;
 }
 #aa-banner .aa-banner-area a {
   display: block;
+  padding:0;
 }
 #aa-banner .aa-banner-area a img {
-  max-width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 /*==================

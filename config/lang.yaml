@@ -1,0 +1,45 @@
+translate:    
+
+    en:
+        Locale.Selection: 'select language'
+        # Main Nav 
+        Main-Nav.Home: 'Home'
+        
+        Main-Nav.News: ''
+        Main-Nav.About-us: 'About Us'
+        Main-Nav.Contact-us: ''
+        # Home Blocks Headings
+        Home.seriesBolock.heading: ''
+        Home.news.Heading: ''
+        Home.subscribe-Form: '' 
+        # Contact Us Page
+        ContactUs.Heading: ''
+        ContactUs.NameLable: ''
+        ContactUs.EmailLable: ''
+        ContactUs.PhoneLable: ''
+        ContactUs.SubjectLable: ''
+        ContactUs.MessageLable: ''
+        ContactUs.ButtonLable: ''
+
+        
+        
+    ar:
+        Locale.Selection: 'select language'
+        # Main Nav 
+        Main-Nav.Home: 'الرئيسية'                
+        
+        Main-Nav.News: ''
+        Main-Nav.About-us: 'عن المكتبة'
+        Main-Nav.Contact-us: ''
+        # Home Blocks Headings
+        Home.seriesBolock.heading: ''
+        Home.news.Heading: ''
+        Home.subscribe-Form: ''
+        # Contact Us Page
+        ContactUs.Heading: ''
+        ContactUs.NameLable: ''
+        ContactUs.EmailLable: ''
+        ContactUs.PhoneLable: ''
+        ContactUs.SubjectLable: ''
+        ContactUs.MessageLable: ''
+        ContactUs.ButtonLable: ''

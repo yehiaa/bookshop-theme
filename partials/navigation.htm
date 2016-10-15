@@ -4,7 +4,8 @@
     <div class="container">
       <div class="menu-area">
         <!-- Navbar -->
-        <div class="navbar navbar-default" role="navigation">
+       
+      <div class="navbar navbar-default" role="navigation">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -16,32 +17,25 @@
           <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav">
-              <li><a href="{{ url('/') }}">Home</a></li>
-              <li><a href="{{ url('/products') }}">Books </a> 
+              <li><a href="{{ url('/') }}">{{ 'Main-Nav.Home'|_ }}</a></li>
+              <li><a href="{{ url('/products') }}">{{ 'Main-Nav.Book-Series'|_ }} </a> 
                 <ul class="dropdown-menu">
-                   <li><a href="{{ url('allseries') }}">All Series</a></li>
-                   <li><a href="{{ url('products') }}">All Books</a>
+                   <li><a href="{{ url('allseries') }}">{{ 'Main-Nav.All-Series'|_ }} </a></li>
+                   <li><a href="{{ url('products') }}">{{ 'Main-Nav.All-Books'|_ }}</a>
                      
                    </li>
                 </ul>
 
               </li>         
-               <li><a href="#">Work with us </a> 
-                <ul class="dropdown-menu">
-                   <li><a href="#">Authors</a></li>
-                   <li><a href="#">Partnerships</a></li>
-                   <li><a href="#">Distributors & booksellers</a></li>
-                </ul>
-
-              </li>          
-              
-              <li><a href="{{ url('news') }}">News</a></li>
-              <li><a href="{{ url('about') }}">About us</a></li>
-              <li><a href="{{ url('contact') }}">Contact us</a></li>
+                            
+              <li><a href="{{ url('news') }}">{{ 'Main-Nav.News'|_ }}</a></li>
+              <li><a href="{{ url('about') }}">{{'Main-Nav.About-us'|_}}</a></li>
+              <li><a href="{{ url('contact') }}">{{ 'Main-Nav.Contact-us'|_ }}</a></li>
               
             </ul>
           </div><!--/.nav-collapse -->
         </div>
+       
       </div>       
     </div>
   </section>

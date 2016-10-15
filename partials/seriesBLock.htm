@@ -1,39 +1,30 @@
+[seriesBLock]
+max = 10
+orderBy = "title"
+orderDirection = "asc"
+==
+
+
+
+
 <section id="aa-series-blog">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="aa-series-blog-area">
-                      <h2>BOOK SERIES</h2>
-                        <div class="row">                       
-                          {% for series in seriesBLock.series %}
-                          <!-- single latest blog -->
-                             <div class="col-md-3">
-                                <div class="aa-series-blog-single">
-                                    <div class="aa-series-img  img-circle">
-                                        <a href="{{ url('/series') ~ '/' ~ series.slug }}">
-                                        {% if series.image.getPath %}
-                                            <img src="{{series.image.getpath}}">
-                                        {% else %}
-                                            <img src="{{'assets/img/electronics/electronic-1.png'|theme}}">
-                                        {% endif %}
-                                        </a>
-                                   </div>
-                                    <div class="aa-series-info">
-                                        <h3 class="aa-series-title">
-                                          <a href="{{ url('/series') ~ '/' ~ series.slug }}">{{series.title}}</a>
-                                        </h3>
-                                        <p>{{series.shortDescription}}</p>
-                                        <!--<a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>-->
-                                 </div>
-                               </div>
-                             </div>                  
-                          {% endfor %}
-                        </div> 
-                        <div class="aa-browse-btn-container ">
-                        <a class="aa-browse-btn" href="{{ url('/allseries')}}">Browse all Series <span class="fa fa-long-arrow-right"></span>
-                           </a>
-                           </div>                       
-                    </div>
+                      
+                        <!-- Home Series Block Heading -->
+                        <h2>{{ 'Home.seriesBolock.heading'|_ }}</h2>
+                        
+
+                         {% component 'seriesBLock' %} 
+
+
+                        
+                        
+
+                   </div>                                      
+                 </div>
 
                 </div>
            </div>

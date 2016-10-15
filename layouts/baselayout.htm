@@ -41,6 +41,7 @@ function onBeforePageStart(){
     'assets/css/jquery.smartmenus.bootstrap.css',
     'assets/css/jquery.simpleLens.css',
     'assets/css/slick.css',
+    
     'assets/css/nouislider.css',
     'assets/css/theme-color/default-theme.css',
     'assets/css/style.css',
@@ -51,7 +52,7 @@ function onBeforePageStart(){
      <!-- Google Font -->
     <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lateef&subset=arabic,latin' rel='stylesheet' type='text/css'>
+   
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,26 +64,24 @@ function onBeforePageStart(){
 
   </head>
   <body> 
-   <!-- wpf loader Two -->
-    <div id="wpf-loader-two">          
-      <div class="wpf-loader-two-inner">
-        <span>Loading</span>
-      </div>
-    </div> 
-    <!-- / wpf loader Two -->       
-  <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
-  <!-- END SCROLL TOP BUTTON -->
+  
+        <!-- wpf loader Two -->
+        <div id="wpf-loader-two">          
+          <div class="wpf-loader-two-inner">
+            <span>Loading</span>
+          </div>
+        </div> 
+        <!-- / wpf loader Two --> 
 
+        <!-- SCROLL TOP BUTTON -->
+          <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+        <!-- END SCROLL TOP BUTTON -->
+
+  
+ 
   {% partial "header" %}
   
-  <p>
-    {{ 'locale.selection'|_}}
   
-    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a>,
-    <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ar'">Arabic</a>
-    {% component 'localePicker' %}
-</p>
   {% partial "navigation" %}
 
   {% page %}
@@ -91,6 +90,7 @@ function onBeforePageStart(){
 
   {% partial "footer" %}
 
+  
   <script src="{{ [
     'assets/js/jquery.js',
     'assets/js/bootstrap.js',
@@ -104,8 +104,10 @@ function onBeforePageStart(){
     '@framework.extras'
     ]|theme }}"></script>
     
+    
     {% framework extras %}
     {% scripts %}
 
+     
   </body>
 </html>

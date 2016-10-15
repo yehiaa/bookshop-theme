@@ -1,37 +1,58 @@
+==
 <!-- Start header section -->
 <header id="aa-header">
+<div class="container">
   <!-- start header top  -->
-  
+   <!-- <div class="aa-header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-header-top-area">
+                <div class="aa-locale">
+                    {% component 'localePicker' %}
+                </div>
+          </div>
+        </div>
+       </div>
+      </div>
+     </div>           -->
   <!-- / header top  -->
 
   <!-- start header bottom  -->
   <div class="aa-header-bottom">
-    <div class="container">
+   
+    <div class="aa-header-bottom-area">
       <div class="row">
-        <div class="col-md-12">
-          <div class="aa-header-bottom-area">
-            <!-- logo  -->
+      <div class=col-md-4>
             <div class="aa-logo">
               <!-- Text based logo -->
               <a href="{{ url ('/') }}">
                  <img src="{{'assets/img/logo/alex_logo.png'|theme}}" />
               </a>
-              <!-- img based logo -->
-              <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+              
+              
             </div>
-            
-            <!-- search box -->
-            <div class="aa-search-box">
+      </div>
+      
+      <div class=col-md-4>
+       <div class="aa-search-box">
               <form action="{{ url('/products') }}">
                 <input type="text" name="q" id="" placeholder="Search here ">
                 <button type="submit"><span class="fa fa-search"></span></button>
               </form>
             </div>
-            <!-- / search box -->             
-          </div>
-        </div>
       </div>
-    </div>
+
+      <div class=col-md-4>
+       <div class="aa-language">
+         {% component 'localePicker' %}
+       </div>
+      </div>
+
+      </div>
+      </div>
+   
+  </div>
   </div>
   <!-- / header bottom  -->
 </header>

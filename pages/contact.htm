@@ -3,19 +3,8 @@ url = "/contact"
 layout = "baselayout"
 is_hidden = 0
 
-[simpleContact]
-nameTitle = "Full Name"
-emailTitle = "Email"
-phoneTitle = "Phone"
-subjectTitle = "Subject"
-messageTitle = "Message"
-buttonText = "Submit"
-displayPhone = 1
-==
-<!-- catg header banner section -->
-  
-  <!-- / catg header banner section -->
 
+==
 
 <!-- start contact section -->
  <section id="aa-contact">
@@ -24,7 +13,10 @@ displayPhone = 1
        <div class="col-md-12">
          <div class="aa-contact-area">
            <div class="aa-contact-top">
-             <h2>We are wating to assist you..</h2>
+
+
+            <!-- We are wating to help you.. -->
+            <h2>{{'ContactUs.Heading'|_}}</h2>
              
            </div>
            <!-- contact map -->
@@ -35,9 +27,10 @@ displayPhone = 1
                <div class="col-md-8">
                  <div class="aa-contact-address-left">
 
-<!-- start form -->
-{% component 'simpleContact' %}
-<!-- end form -->
+                                              
+                          <!-- start form -->
+                          {% partial "contact-form.htm"  %}
+                          <!-- end form -->                        
 
                  </div>
                </div>

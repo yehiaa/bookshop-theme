@@ -1,18 +1,54 @@
 name: book-shoop-theme
-description: 'theme for book shop  '
-author: yehia
+description: 'theme for book shop'
+author: Khalil
 homepage: ''
 code: ''
 
-translate:
+
+
+translate:    
+
     en:
-        locale.selection: 'select language'
-        nav.video: 'Video'
-        title.home: 'Welcome Home'
-        title.video: 'Screencast Video'
+        Locale.Selection: 'select language'
+        # Main Nav 
+        Main-Nav.Home: 'Home'
+        
+        Main-Nav.News: ''
+        Main-Nav.About-us: 'About Us'
+        Main-Nav.Contact-us: ''
+        # Home Blocks Headings
+        Home.seriesBolock.heading: ''
+        Home.news.Heading: ''
+        Home.subscribe-Form: '' 
+        # Contact Us Page
+        ContactUs.Heading: ''
+        ContactUs.NameLable: ''
+        ContactUs.EmailLable: ''
+        ContactUs.PhoneLable: ''
+        ContactUs.SubjectLable: ''
+        ContactUs.MessageLable: ''
+        ContactUs.ButtonLable: ''
+
+        
+        
     ar:
-        locale.selection: 'أختر اللغة'
-        nav.home: 'Home'
-        nav.video: 'Video'
-        title.home: 'Welcome Home'
-        title.video: 'Screencast Video'
+        Locale.Selection: 'select language'
+        # Main Nav 
+        Main-Nav.Home: 'الرئيسية'                
+        
+        Main-Nav.News: ''
+        Main-Nav.About-us: 'عن المكتبة'
+        Main-Nav.Contact-us: ''
+        # Home Blocks Headings
+        Home.seriesBolock.heading: ''
+        Home.news.Heading: ''
+        Home.subscribe-Form: ''
+        # Contact Us Page
+        ContactUs.Heading: ''
+        ContactUs.NameLable: ''
+        ContactUs.EmailLable: ''
+        ContactUs.PhoneLable: ''
+        ContactUs.SubjectLable: ''
+        ContactUs.MessageLable: ''
+        ContactUs.ButtonLable: ''
+        
