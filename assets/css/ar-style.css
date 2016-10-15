@@ -37,15 +37,17 @@
 */
 
 /* BASE - Base tyles, Variables, Mixins, etc. */
+html{
+  margin: 0px;
+   padding:0px; }
+
 body {
   background-color:#ffffff;
-  font-family: "Lateef", "Lato", sans-serif, , cursive,;
+  font-family: Changa,"Helvetica Neue";
   color: #333333;
-  font-size: 16px;
+  font-size: 18px;
   overflow-x: hidden;
   margin-top:0px;
-
- 
 }
 
 .no-padding {
@@ -73,7 +75,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: Changa,"Helvetica Neue", Helvetica;
 }
 
 h2 {
