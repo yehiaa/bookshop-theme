@@ -16,7 +16,7 @@ translate:
         
         Main-Nav.News: ''
         Main-Nav.About-us: 'About Us'
-        Main-Nav.Contact-us: ''
+        Main-Nav.Contact-us: 'Contact Us'
         # Home Blocks Headings
         Home.seriesBolock.heading: ''
         Home.news.Heading: ''
@@ -39,7 +39,7 @@ translate:
         
         Main-Nav.News: ''
         Main-Nav.About-us: 'عن المكتبة'
-        Main-Nav.Contact-us: ''
+        Main-Nav.Contact-us: 'اتصل بنا'
         # Home Blocks Headings
         Home.seriesBolock.heading: ''
         Home.news.Heading: ''
@@ -47,7 +47,7 @@ translate:
         # Contact Us Page
         ContactUs.Heading: ''
         ContactUs.NameLable: ''
-        ContactUs.EmailLable: ''
+        ContactUs.EmailLable: 'ال'
         ContactUs.PhoneLable: ''
         ContactUs.SubjectLable: ''
         ContactUs.MessageLable: ''
