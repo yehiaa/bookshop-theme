@@ -29,6 +29,16 @@ translate:
         ContactUs.SubjectLable: ''
         ContactUs.MessageLable: ''
         ContactUs.ButtonLable: ''
+        # Footer
+        Footer.Main Menu : ''
+        Footer.Home : ''
+        Footer.Books: ''
+        Footer.News: ''
+        Footer.About-Us: ''
+        Footer.Contact-Us: ''
+        Footer.Contact-Us.Heading: ''
+        Footer.Address: ''
+
 
         
         
@@ -52,4 +62,13 @@ translate:
         ContactUs.SubjectLable: ''
         ContactUs.MessageLable: ''
         ContactUs.ButtonLable: ''
+         # Footer
+        Footer.Main Menu : ''
+        Footer.Home : ''
+        Footer.Books: ''
+        Footer.News: ''
+        Footer.About-Us: ''
+        Footer.Contact-Us: ''
+        Footer.Contact-Us.Heading: ''
+        Footer.Address: ''
         

@@ -652,7 +652,8 @@ div{border:0px; }
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-#aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:hover, #aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:focus {
+#aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:hover,
+#aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-remove-product:focus {
   color: #333;
 }
 #aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary ul li .aa-cartbox-total-title {
@@ -829,6 +830,7 @@ div{border:0px; }
 }
 
 #wpf-loader-two {
+  background-color: #333333;
   height: 100%;
   bottom: 0;
   left: 0;
@@ -840,7 +842,7 @@ div{border:0px; }
 }
 
 #wpf-loader-two .wpf-loader-two-inner {
-  border: 2px solid #fff;
+ /* border: 2px solid #fff;*/
   border-radius: 50%;
   height: 100px;
   left: 46%;
@@ -849,8 +851,14 @@ div{border:0px; }
   width: 100px;
   text-align: center;
 }
+#wpf-loader-two .wpf-loader-two-inner i{
+  color: #FFF;
+}
+#wpf-loader-two .wpf-loader-two-inner span{
+  color: #FFF;
+}
 
-#wpf-loader-two .wpf-loader-two-inner:before {
+/*#wpf-loader-two .wpf-loader-two-inner:before {
   content: "";
   height: 57%;
   left: -204px;
@@ -884,7 +892,7 @@ div{border:0px; }
   animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-}
+}*/
 
 #wpf-loader-two .wpf-loader-two-inner span {
   color: #fff;
@@ -1740,6 +1748,31 @@ div{border:0px; }
   font-size: 15px;
   margin-bottom: 0;
 }
+
+/*==================
+LATEST NEWS SECTION
+====================*/
+
+#aa-latest-news{
+  width:100%;
+  display: inline-block;
+  margin: 0 0 35px 0;
+  height: 100%;
+
+}
+#aa-latest-news .aa-latest-news-area > h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#aa-latest-news .aa-latest-news-area .aa-latest-news-body .img-section{
+  display: inline;
+  float: left;
+  width:50%;  
+}
+#aa-latest-news .aa-latest-news-area .aa-latest-news-body .desc-section{
+  width:50%; 
+}
+
 
 /*==================
  TESTIMONIAL SECTION
