@@ -41,7 +41,7 @@ html{
    padding:0px; }
 
 body {
-  background-color:#ffffff;
+  background-color:#FFFFFF;
   font-family: "Helvetica Neue", Helvetica,sans-serif, cursive;
   color: #333333;
   font-size: 16px;
@@ -96,7 +96,8 @@ img {
 
 div{border:0px; }
 
-.container{  
+.container{ 
+  
   margin: 0 auto;
   padding: 0;
 }
@@ -264,6 +265,7 @@ div{border:0px; }
 }
 
 #aa-header {
+  background-color: #FFFFFF;
   display: inline;
   float: left;
   margin-top: 0px;
@@ -426,13 +428,14 @@ div{border:0px; }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo {
   float: left;
   margin-top: 4px;
-  padding: 0 15px 0 5px;
-  
+  padding: 0 15px 0 5px;  
   border-right: 1px solid #ED1B35;
 }
+
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a {
   font-family: "Raleway", sans-serif;
   font-size: 28px;
+
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a:hover {  
   color: #333;
@@ -460,8 +463,7 @@ div{border:0px; }
 
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box {
   float: left;
-  margin:13px 5% 0 0;
-  
+  margin:13px 5% 0 0;  
   position: relative;
   width: 500px;
 }
@@ -830,7 +832,7 @@ div{border:0px; }
 }
 
 #wpf-loader-two {
-  background-color: #333333;
+  background-color: #E74C54;
   height: 100%;
   bottom: 0;
   left: 0;
@@ -853,9 +855,11 @@ div{border:0px; }
 }
 #wpf-loader-two .wpf-loader-two-inner i{
   color: #FFF;
+  font-size:60px; 
 }
 #wpf-loader-two .wpf-loader-two-inner span{
   color: #FFF;
+  font-size:15px; 
 }
 
 /*#wpf-loader-two .wpf-loader-two-inner:before {
@@ -1337,7 +1341,7 @@ div{border:0px; }
   display: block;
   text-align: center;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .aa-products-tab li {
   border: none;
@@ -1665,7 +1669,7 @@ div{border:0px; }
 }
 
 /*==================
-  POPULAR SECTION
+  SUBJECT SECTION
 ====================*/
 
 #aa-popular-category {
@@ -1682,14 +1686,49 @@ div{border:0px; }
   /* bootstrap hack end */
 }
 
-#aa-popular-category .aa-popular-category-area .tab-content {
-  padding-top:30px;
-  }
+#aa-popular-category .aa-popular-category-area .aa-subject-tab {
+  display: block;
+  text-align: center;
+  border: none;
+  float: none;
+  width:80%; 
+  margin: 0px 20% 20px 20%;
+}
+#aa-popular-category .aa-popular-category-area .aa-subject-tab span{
+  font-size: 20px;
+}
+#aa-popular-category .aa-popular-category-area .aa-subject-tab .aa-products-tab li {
+  border: none;
+  float: none;
+  display: inline-block;
+}
+#aa-popular-category .aa-popular-category-area .aa-subject-tab li a {
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  margin: 0 6px;
+  padding: 10px 12px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
 #aa-popular-category .aa-popular-category-area h2{
-  color:#333;
+  color:#ED1B36;
   font-weight: normal;
 
   }
+#aa-popular-category .aa-popular-category-area  .aa-products-tab{
+  margin-bottom: 10px;
+}
+
+#aa-popular-category .aa-popular-category-area .tab-content {
+  padding-top:30px;
+  }
+
 #aa-popular-category .aa-popular-category-area .tab-content > .tab-pane:not(.active),
 #aa-popular-category .aa-popular-category-area .pill-content > .pill-pane:not(.active) {
   display: block;
@@ -1701,16 +1740,33 @@ div{border:0px; }
 #aa-popular-category .aa-popular-category-area #latest {
   text-align: center;
 }
+#aa-popular-category .aa-popular-category-area .aa-series-category button{
+   position: absolute;   
+   top:-10px;
+   width: 30px;
+   height: 30px;   
+  }
+#aa-popular-category .aa-popular-category-area .aa-series-category .slick-prev:before,
+#aa-popular-category .aa-popular-category-area .aa-series-category .slick-next:before
+ {
+    font-size:30px;    
+    color:#ED1B36;    
 
-.slick-arrow {
-  height: 30px;
-  width: 30px;
+ }
+
+#aa-popular-category .aa-popular-category-area .aa-series-category li figure{
+  width: 90%;
+  height: 500px;
+  padding: 10px 0 ;
+  margin: 0px auto;  
+  background-color:#F7F4F4; 
 }
-#aa-popular-category .aa-popular-category-area #aa-product-catg li{
-  padding: 10px;
+#aa-popular-category .aa-popular-category-area .aa-series-category li figure img{
 
+  margin: 0px auto;  
+ 
+ 
 }
-
 /*==================
  SUPPORT SECTION
 ====================*/
@@ -2627,7 +2683,8 @@ LATEST NEWS SECTION
   border: none;
   font-size: 18px;
 }
-#aa-product-details .aa-product-details-area .aa-product-details-bottom .nav-tabs li a:hover, #aa-product-details .aa-product-details-area .aa-product-details-bottom .nav-tabs li a:focus {
+#aa-product-details .aa-product-details-area .aa-product-details-bottom .nav-tabs li a:hover, 
+#aa-product-details .aa-product-details-area .aa-product-details-bottom .nav-tabs li a:focus {
   background-color: transparent;
   border: none;
 }
