@@ -142,7 +142,7 @@ jQuery(function($){
   /* ----------------------------------------------------------- */
   /*  6. LATEST PRODUCT SLIDER (SLICK SLIDER)
   /* ----------------------------------------------------------- */      
-    jQuery('.aa-latest-slider').slick({
+    jQuery('.aa-series-category').slick({
         dots: false,
         infinite: false,
         speed: 300,

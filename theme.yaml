@@ -30,7 +30,7 @@ translate:
         ContactUs.MessageLable: ''
         ContactUs.ButtonLable: ''
         # Footer
-        Footer.Main Menu : ''
+        Footer.Main-Menu : ''
         Footer.Home : ''
         Footer.Books: ''
         Footer.News: ''
@@ -63,7 +63,7 @@ translate:
         ContactUs.MessageLable: ''
         ContactUs.ButtonLable: ''
          # Footer
-        Footer.Main Menu : ''
+        Footer.Main-Menu : ''
         Footer.Home : ''
         Footer.Books: ''
         Footer.News: ''

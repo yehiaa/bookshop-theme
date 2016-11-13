@@ -18,24 +18,31 @@ orderDirection = "asc"
 [newsList]
 max = 3
 
-[form]
-
-[slideShow]
-slider = 1
+[slider]
 ==
-<div class="container">
-
-{% component 'slideShow'%}
 
 
-{% partial 'seriesBLock' %}
+	<div class="row">
+		<div class="col-md-12">
+
+		{% component 'slider' slide_show_id = 1 %}
+
+
+		</div>
+	</div>
+
+
+{% component 'booksBLock' %}
+
+
+
 {% partial "banner1" %}
 <hr>
-{% component 'booksBLock' %}
+
+
 
 {% partial "home-news" %}
 {% partial "banner2" %}
 
 {% partial "subscribe" %}
 
-</div>
