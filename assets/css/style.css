@@ -1823,7 +1823,9 @@ LATEST NEWS SECTION
 
 }
 #aa-latest-news .aa-latest-news-area > h2{
+
   text-align: center;
+  margin-top: 25px;
   margin-bottom: 20px;
 }
 #aa-latest-news .aa-latest-news-area .aa-latest-news-body .img-section{
